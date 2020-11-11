@@ -11,9 +11,6 @@
         android:layout_height="match_parent"
         android:src="@drawable/sl"
         android:scaleType="centerCrop"
-
-
-
         />
 
 </LinearLayout>

@@ -8,7 +8,7 @@ import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
-    internal  val  TIME_OUT=2000
+    internal  val  TIME_OUT=1300
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
