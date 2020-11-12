@@ -55,7 +55,7 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox"
             android:layout_width="match_parent"
-
+            app:passwordToggleEnabled="true"
             android:layout_height="wrap_content">
 
 
@@ -187,11 +187,13 @@
         />
 
     <TextView
+        android:id="@+id/textButton"
         android:layout_marginVertical="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="  Sign up"
         android:textColor="#317BAA"
+
         />
     </LinearLayout>
 </LinearLayout>
