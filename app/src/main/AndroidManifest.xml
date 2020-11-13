@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.FullScreen">
         <activity android:name=".Registration"></activity>
         <activity android:name=".DemooActivity" />
         <activity android:name=".MainActivity">

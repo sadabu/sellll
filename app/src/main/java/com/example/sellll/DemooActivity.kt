@@ -30,10 +30,6 @@ class DemooActivity : AppCompatActivity() {
         val languages = arrayOf("English","Русский","O'zbekcha")
         val ArrayAdp=ArrayAdapter(this@DemooActivity,android.R.layout.simple_spinner_dropdown_item,languages)
         spin.adapter=ArrayAdp
-
-
-
-
         }
 
     }

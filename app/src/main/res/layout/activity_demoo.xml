@@ -48,7 +48,6 @@
                 android:hint="Enter your Email"
                 android:inputType="text"
                 android:maxLines="1"
-                android:background="@null"
                 />
 
 
