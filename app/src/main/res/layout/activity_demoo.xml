@@ -35,6 +35,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/TextInputLayout.OutlineBox.CustomFont"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
 
             >
 
@@ -42,8 +45,6 @@
                 android:id="@+id/emailId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:hint="Enter your Email"
                 android:inputType="text"
                 android:maxLines="1"
@@ -54,18 +55,18 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox"
             android:layout_width="match_parent"
-            app:passwordToggleEnabled="true"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            style="@style/TextInputLayout.OutlineBox.CustomFont"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            >
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:hint="Enter your Password"
                 android:inputType="textPassword"
                 android:maxLines="1" />
@@ -80,7 +81,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
-            android:background="#327FB6"
             android:text="LOGIN"
             android:textColor="@color/white"
 

@@ -1,10 +1,62 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">#317BAA</item>
+        <item name="colorPrimaryDark">#317BAA</item>
     </style>
+        <!-- region TextInputLayout & TextInputEditText styles -->
+        <style name="TextInputLayout.OutlineBox.CustomFont" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <item name="android:theme">@style/ThemeOverlay.TextInputEditText.OutlinedBox.CustomFont</item>
+            <item name="endIconTint">#317BAA</item>
+            <item name="boxStrokeColor">#317BAA</item>
+            <item name="boxStrokeWidth">1dp</item>
+            <item name="startIconTint">#317BAA</item>
+            <item name="hintTextColor">#317BAA</item>
+
+        </style>
+
+        <style name="ThemeOverlay.TextInputEditText.OutlinedBox.CustomFont" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+            <item name="editTextStyle">@style/TextInputEditText.OutlinedBox.CustomFont</item>
+            <item name="colorPrimary">#317BAA</item>
+
+        </style>
+
+        <style name="TextInputEditText.OutlinedBox.CustomFont" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+            <item name="android:fontFamily">@font/avenir_medium</item>
+            <item name="android:textColor">#317BAA</item>
+            <item name="android:imeOptions">actionDone</item>
+            <item name="android:inputType">text</item>
+            <item name="android:maxLines">1</item>
+        </style>
+
+        <style name="CustomFontTextInputLayout" parent="Widget.Design.TextInputLayout">
+            <item name="hintTextAppearance">@style/TextInputLayoutHintText</item>
+            <item name="helperTextTextAppearance">@style/TextInputLayoutHelperText</item>
+            <item name="errorTextAppearance">@style/TextInputLayoutErrorText</item>
+
+
+        </style>
+
+        <style name="TextInputLayoutHintText" parent="TextAppearance.Design.Hint">
+            <item name="android:fontFamily">@font/avenir_medium</item>
+            <item name="android:textColor">@color/white</item>
+        </style>
+
+        <style name="TextInputLayoutHelperText" parent="TextAppearance.Design.HelperText">
+            <item name="android:fontFamily">@font/avenir_medium</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:textColor">@color/white</item>
+
+        </style>
+
+        <style name="TextInputLayoutErrorText" parent="TextAppearance.Design.Error">
+            <item name="android:fontFamily">@font/avenir_medium</item>
+            <item name="android:textColor">#F70000</item>
+        </style>
+
 
 </resources>
